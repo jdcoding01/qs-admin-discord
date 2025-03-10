@@ -11,7 +11,9 @@
 
 ## `Step 3:` Set up a [Discord Application](https://discord.com/developers/applications) as a `Bot`, copy the `token` and set it on ` .env` file, make sure to invite the bot to your server
 
-## `Step 4:` Run the bot: `ts-node src/index.ts`
+## `Step 4:` For this step `qs-fivem-api` is required to be installed and running on your FiveM server, set `.env.API_SECRET` to the secret defined in the API config, and `.env.API_URL` to the IP address of your server, such as `00.00.00.00:30120`
+
+## `Step 5:` Run the bot: `ts-node src/index.ts`
 
 # Commands
 
