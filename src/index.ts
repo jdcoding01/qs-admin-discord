@@ -84,7 +84,6 @@ client.on('interactionCreate', async (interaction: Interaction) => {
     }
 
     try {
-      // Now that we know it's a command, we cast the interaction to a CommandInteraction
       await (command.execute(interaction as CommandInteraction, sequelize));
     } catch (error) {
       console.error(error);
@@ -99,8 +98,11 @@ client.on('interactionCreate', async (interaction: Interaction) => {
 // Initialize the bot
 const initializeBot = async () => {
   await sequelize.authenticate()
-    .then(() => console.log('Database connected successfully'))
-    .catch(err => console.error('Database connection failed:', err));
+    .then(() => {
+      // sequelize.sync({ alter: true });
+      console.log('[DATABASE]: connected successfully');
+    })
+    .catch(err => console.error('[DATABASE]: connection failed:', err));
 
   loadEvents(client);
   loadCommands();
