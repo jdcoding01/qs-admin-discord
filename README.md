@@ -1,5 +1,5 @@
 > # qs-admin-discord
-> ## Part of the `qs-admin` ecosystem, this bot enables a vast amount of admin actions to be performed from your Discord server, thus enabling faster Staff response times and efficiency by reducing the need to load in city to do everything, this is a complete Discord tool intended to work with the `qs-adminmenu`.
+> ## Part of the `qs-admin` ecosystem, this bot enables a vast amount of admin actions to be performed from your Discord server,  this is a complete Discord tool intended to work with the `qs-adminmenu (required)` and `qs-fivem-api (required)`.
 
 # Installation 
 
